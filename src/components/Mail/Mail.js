@@ -10,6 +10,7 @@ import MoreVertIcon from "@mui/icons-material/MoreVert";
 import UnfoldMoreIcon from "@mui/icons-material/UnfoldMore";
 import PrintIcon from "@mui/icons-material/Print";
 import ExitToAppIcon from "@mui/icons-material/ExitToApp";
+import LabelImportantIcon from "@mui/icons-material/LabelImportant";
 import { IconButton } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
@@ -53,6 +54,16 @@ function Mail() {
             <ExitToAppIcon />
           </IconButton>
         </div>
+      </div>
+      <div className="mail__body">
+        <div className="mail__bodyHeader">
+          <h2>Subject</h2>
+          <LabelImportantIcon className="mail__important" />
+          <p>Title</p>
+          <p className="mail__time">10pm</p>
+        </div>
+
+        <div className="mail__message">This is a message</div>
       </div>
     </div>
   );
